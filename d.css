@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.fit{
+    transform-style: preserve-3d;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-40px) scale(5);
+}
+h1{
+    padding-bottom: 200px;
+    font-weight: 400;
+    font-size: 7rem;
+    text-shadow: 2px 3px 12px rgb(91, 126, 91);
+
+}
+h2{
+    font-size:4rem;
+    text-shadow: 2px 3px 13px rgb(79, 78, 78);
+}
+.p1{
+    background-image: url(building.jpg);
+}
+.p2{
+    background-image: url(mountains.jpg);
+}
+.p3{
+    background-image: url(river.jpg);
+}
+.p4{
+    background-image: url(sport-3.jpg);
+}
+.p{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+section{
+    background-color: rgb(30, 28, 28);
+    color: whitesmoke;
+}
+.t{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 90px;
+}
+.h{
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+}
